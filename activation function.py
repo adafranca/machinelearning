@@ -7,6 +7,9 @@ def softmax(scores):
 
 def main():
     scores = [3.0, 1.0, 0.2]
+    scores = np.array(scores)
+    scores = scores / 10
+    print(scores)
     print(softmax(scores))
 
 
